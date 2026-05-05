@@ -1,11 +1,443 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AprendeYa</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/img/academy.webp"
+            alt="Logo"
+            width="74"
+            height="74"
+            class="d-inline-block align-text-center"
+          />
+          Academia Aprende Ya</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Instructores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <section class="container-fluid py-5 bg-dark">
+      <div id="slider1" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#slider1"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider1"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider1"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/img/a1.png"
+              class="d-block w-100"
+              alt="Cafetería"
+              style="height: 500px; object-fit: cover"
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded"
+            >
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+              <button type="button" class="btn btn-primary">
+                Explorar Cursos
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/a2.png"
+              class="d-block w-100"
+              alt="Cafetería"
+              style="height: 500px; object-fit: cover"
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded"
+            >
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+              <button type="button" class="btn btn-primary">
+                Explorar Cursos
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/a3.png"
+              class="d-block w-100"
+              alt="Cafetería"
+              style="height: 500px; object-fit: cover"
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded"
+            >
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+              <button type="button" class="btn btn-primary">
+                Explorar Cursos
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider1"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider1"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Cards -->
+    <section class="container-fluid py-5 bg-light">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img
+              src="./img/desarrollo.webp"
+              alt="Desrrollo Web"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Desarrollo Web Fullstack: De Cero a Experto
+              </h4>
+              <p>
+                Domina las tecnologías que mueven el mundo actual. Aprenderás a
+                construir sitios web desde la estructura con HTML y CSS, hasta
+                la lógica compleja con JavaScript y bases de datos. Un curso
+                100% práctico diseñado para que lances tu primer proyecto real
+                en menos de 12 semanas.
+              </p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="img/AI.jpg" alt="AI" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">
+                Inteligencia Artificial para el Día a Día
+              </h4>
+              <p>
+                No dejes que la tecnología te deje atrás. Descubre cómo utilizar
+                herramientas de IA para automatizar tareas repetitivas, generar
+                contenido de alta calidad y optimizar tu flujo de trabajo.
+                Aprenderás a escribir prompts profesionales que te ahorrarán
+                horas de trabajo manual.
+              </p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="img/cafe.webp" alt="Cafe" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Estrategias de Marketing Digital 360°</h4>
+              <p>
+                Convierte clics en clientes leales. En este curso aprenderás a
+                diseñar campañas efectivas en redes sociales, entender las
+                métricas que realmente importan y posicionar tu marca en los
+                primeros lugares de Google. La guía definitiva para hacer crecer
+                cualquier negocio en el entorno digital.
+              </p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="img/money.jpg" alt="Money" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">
+                Finanzas Personales e Inversiones para Principiantes
+              </h4>
+              <p>
+                Toma el control total de tu dinero. Aprende a crear un
+                presupuesto que funcione, elimina tus deudas y descubre cómo
+                empezar a invertir en la bolsa o criptoactivos de forma segura.
+                El objetivo es simple: que tu dinero empiece a trabajar para ti.
+              </p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Botones grades alineados -->
+    <section class="container-fluid py-5 bg-dark d-inline-block">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="#" class="btn btn-primary">Desarrollo Web</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="#" class="btn btn-primary">Marketing</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="#" class="btn btn-primary">Finanzas</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="#" class="btn btn-primary">Programación Full Stack</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid py-5 bg-light d-inline-block " >
+        <div class="row">
+            <img src="" class="rounded 400px" alt="">
+        </div>
+    </section>
+ <!-- Cards -->
+ <section class="container py-5 bg-light">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+          <img
+            src="./img/p1.png"
+            alt="Desrrollo Web"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h4 class="card-title">
+              Paco El Taco
+            </h4>
+            <p>
+              Desarrollador Full Stack
+            </p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="img//p2.png" alt="AI" class="card-img-top" />
+          <div class="card-body">
+            <h4 class="card-title">
+              Marylyn Monroe
+            </h4>
+            <p>
+              Especialista en economia
+            </p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="img/p3.png" alt="Cafe" class="card-img-top" />
+          <div class="card-body">
+            <h4 class="card-title">Daniela</h4>
+            <p>
+              Especalista en Marketing
+            </p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="img/p4.webp" alt="Money" class="card-img-top" />
+          <div class="card-body">
+            <h4 class="card-title">
+              Roberto Willams
+            </h4>
+            <p>
+              Experto en programación full stack
+            </p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Acordion -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+            aria-controls="collapseOne"
+          >
+            ¿Necesito conocimientos previos para inscribirme?
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            La mayoría de nuestros cursos están diseñados para empezar desde
+            cero. Sin embargo, en la descripción de cada programa verás una
+            sección llamada "Requisitos" donde especificamos si es necesario
+            algún conocimiento técnico previo.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            ¿Los cursos son en vivo o grabados?
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Contamos con una metodología híbrida. Tendrás acceso a lecciones
+            grabadas en alta definición para que avances a tu ritmo, junto con
+            sesiones de tutoría en vivo programadas mensualmente para resolver
+            dudas en tiempo real.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            ¿Cuánto tiempo tendré acceso al contenido?
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Una vez que te inscribes, el acceso es de por vida (o por el tiempo
+            que dure tu suscripción activa, según el plan elegido). Podrás ver
+            las clases las veces que necesites y desde cualquier dispositivo.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="navbar navbar-dark bg-dark py-3">
+        <div class="container d-flex justify-content-around flex-wrap">
+            <p class="text-light navbar-brand">Academia aprende ya</p>
+            <p class="text-light">&copy; 2026 todos los derechos reservados</p>
+            <div class="d-flex-gap-3">
+                <a href="#" class="btn btn-outline-light">Enlaces</a>
+                <a href="#" class="btn btn-outline-light">Contacto</a>
+            </div>
+            <div class="d-flex-gap-3">
+                <a href="#" class="btn btn-outline-light">WhatsApp</a>
+                <a href="#" class="btn btn-outline-light">Instagram</a>
+                <a href="#" class="btn btn-outline-light">Tiktok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
